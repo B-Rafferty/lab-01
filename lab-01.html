@@ -698,7 +698,21 @@ inter-quartile estimates are.</em></p>
 <h3>Exercise m.</h3>
 <p><em>Within each of the 4 nations, what is the proportion of tourist
 attractions that have free admission for all visitors?</em></p>
-<pre class="r"><code># Write your code here</code></pre>
+<pre class="r"><code>visitors_with_nations %&gt;%
+  count(nation, admission)</code></pre>
+<pre><code>## # A tibble: 10 × 3
+##    nation           admission     n
+##    &lt;chr&gt;            &lt;chr&gt;     &lt;int&gt;
+##  1 England          Charged      33
+##  2 England          Free         93
+##  3 England          Members     114
+##  4 Northern Ireland Charged       1
+##  5 Northern Ireland Free          1
+##  6 Northern Ireland Members       7
+##  7 Scotland         Charged       4
+##  8 Scotland         Free         34
+##  9 Scotland         Members      59
+## 10 Wales            Members       2</code></pre>
 </div>
 <div id="exercise-n." class="section level3">
 <h3>Exercise n.</h3>
